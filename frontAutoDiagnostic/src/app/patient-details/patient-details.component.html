@@ -1,0 +1,21 @@
+<h3>View Patient Details</h3>
+<div>
+    <div>
+        <label> <b>First Name: </b></label> {{patient.firstname}}
+    </div>
+    <div>
+        <label> <b>Last Name: </b></label> {{patient.lastname}}
+    </div>
+    <div>
+        <label> <b>Date Of Birth: </b></label> {{patient.dateOfBirth}}
+    </div>
+    <div>
+        <label> <b>Telephone Number: </b></label> {{patient.telNumber}}
+    </div>
+    <div>
+        <label> <b>HealthIndex: </b></label> {{patient.healthIndex}}
+    </div>
+    <div>
+        <label> <b>Pathology: </b></label> <p *ngFor= "let p of patient.pathologies">{{p.pathology}}</p>
+    </div>
+</div>

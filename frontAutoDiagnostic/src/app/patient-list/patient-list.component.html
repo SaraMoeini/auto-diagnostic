@@ -1,0 +1,23 @@
+<h2>Patient List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <!--<th>Date Of Birth</th>
+            <th>Telephone Number</th>-->
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let patient of patients">
+            <td>{{patient.firstname}}</td>
+            <td>{{patient.lastname}}</td>
+            <!--<td>{{patient.dateOfBirth}}</td>
+            <td>{{patient.telNumber}}</td>-->
+            <td>
+                <button (click)="patientDetails(patient.id)" class="btn btn-primary">View Details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
